@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="https://myblog.com">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- header selection start-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-lightbulb"></i>study go</a>
+        <nav class="navbar">
+            <!-- <ul>
+                <li><a href="article1.html"><b>Home</b></a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li>
+                <li><a href="courses.html"><b>Course</b></a></li>
+                <li><a href="index.html"><b>Description</b></a></li>
+                <li><a href="opin.html"><b>Opinion</b></a></li>
+            </ul> -->
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="#aboutUs"><b>Home</b></a>
+            <a href="#courses"><b>Course</b></a>
+            <a href="#contact"><b>Contact</b></a>
+            <a href="opinion.html#welcome"><b>Description</b></a>
+        </nav>
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+    <!-- header selection end-->
+    <!-- account form selection start-->
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+
+        <form class="login-form active" id="loginForm" action="">
+            <h3>login now</h3>
+            <input type="email" id="loginEmail" placeholder="Enter your email" class="box" required>
+            <input type="password" id="loginPassword" placeholder="Enter your password" class="box" required>
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember-me</label>
+                <a href="#">Forgot password</a>
+            </div>
+
+            <input type="submit" value="login now" id="login" class="btn">
+            <div class="pading">
+                <div id="my-signin2"></div>
+            </div>
+            <a href="#" onclick="signOut();">Sign out</a>
+        </form>
+        <form class="register-form" id="registerForm" action="">
+            <h3>register now</h3>
+            <input type="name" id="registerName" placeholder="Enter your name" class="box">
+            <input type="email" id="registerEmail" placeholder="Enter your email" class="box">
+            <input type="password" id="registerPassword" placeholder="Enter your password" class="box">
+            <input type="password" id="confirmPassword" placeholder="Confim your password" class="box">
+            <input type="submit" value="register now" id="register" class="btn">
+        </form>
+    </div>
+    <!-- account form selection end-->
+    <!-- home selection stars-->
+    <selection class="home">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+            <div class="swiper home-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(image/home-slide-1.jpg) no-repeat;">
+                        <div class="swiper-zoom-container">
+                            <div class="content">
+                                <h3>the best courses you will find here!</h3>
+                                <p>glad to see you</p>
+                                <div class="pad">
+                                    <a href="#courses" class="btn">get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background: url(image/home-slide-2.jpg) no-repeat;">
+                        <div class="swiper-zoom-container">
+                            <div class="content">
+                                <h3>the best courses you will find here!</h3>
+                                <p>glad to see you</p>
+                                <div class="pad">
+                                    <a href="#" class="btn">get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background: url(image/home-slide-3.jpg) no-repeat;">
+                        <div class="swiper-zoom-container">
+                            <div class="content">
+                                <h3>the best courses you will find here!</h3>
+                                <p>glad to see you</p>
+                                <div class="pad">
+                                    <a href="#" class="btn">get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background: url(image/home-slide-4.jpg) no-repeat;">
+                        <div class="swiper-zoom-container">
+                            <div class="content">
+                                <h3>the best courses you will find here!</h3>
+                                <p>glad to see you</p>
+                                <div class="pad">
+                                    <a href="#" class="btn">get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </selection>
+    <!-- home selection end-->
+    <!-- about us stars -->
+    <section id="aboutUs" class="heading-link">
+        <h3>about us</h3>
+        <p><a href="#index.html">home</a> / about</p>
+    </section>
+
+    <selection class="about">
+        <div class="image">
+            <img src="image/about.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3 class="about-title">we have best courses for you</h3>
+            <p>Study GO - is a vocational training programme for people.
+                With us, you will master your subjects and learn the material well.
+                You decide what and when you want to study.
+                You can download training materials, including a reference outline, code, presentation, and assignments
+                for lessons.
+                To test your knowledge, take a test after each lesson and after completing the course in general.
+                After studying the course material, take a test and get a certificate that confirms your level of
+                knowledge 94% of our graduates find a job within the first three months of graduating.
+            </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/images-1.png" alt="">
+                    <h3>750+</h3>
+                    <span>courses</span>
+                </div>
+                <div class="icons">
+                    <img src="image/images-2.png" alt="">
+                    <h3>1700+</h3>
+                    <span>students</span>
+                </div>
+                <div class="icons">
+                    <img src="image/images-3.png" alt="">
+                    <h3>10+</h3>
+                    <span>awards</span>
+                </div>
+            </div>
+        </div>
+    </selection>
+    <!-- about us end -->
+    <!-- courses selection stars-->
+    <section id="courses" class="heading-link">
+        <h3>courses</h3>
+        <p><a href="">home</a> / courses</p>
+    </section>
+    <section class="courses">
+        <h1 class="heading">Our famos courses</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="image/subjects-1.jpg" alt="">
+                    <h3>full-stack development</h3>
+                </div>
+                <div class="content">
+                    <h3>full-stack development</h3>
+                    <p>A full-stack developer knows how to work with both the front-end and back-end of a website, which
+                        allows you to release any idea comprehensively and independently. This profession is diverse and
+                        creative, you will definitely not get bored.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image/subjects-6.jpg" alt="">
+                    <h3>frontend development</h3>
+                </div>
+                <div class="content">
+                    <h3>frontend development</h3>
+                    <p>A Front-End Developer is someone who creates websites and web applications. The difference
+                        between Front-End and Back-End is that Front-End refers to how a web page looks, while back-end
+                        refers to how it works.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image/subjects-8.png" alt="">
+                    <h3>UI/UX designer</h3>
+                </div>
+                <div class="content">
+                    <h3>UI/UX designer</h3>
+                    <p>A UI/UX designer, like a professional spy, learns about everything that worries the user. Based
+                        on this, they make websites and applications user-friendly and aesthetically pleasing. This
+                        profession combines both creativity and analytics.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image/subjects-2.jpg" alt="">
+                    <h3>java development</h3>
+                </div>
+                <div class="content">
+                    <h3>java development</h3>
+                    <p> The Java programming language has been around for more than 20 years and is used in almost all
+                        industries: from mobile applications to websites, from the financial sector to agriculture. Java
+                        is easy to learn for beginners
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image/subjects-5.jpg" alt="">
+                    <h3>c# development</h3>
+                </div>
+                <div class="content">
+                    <h3>c# development</h3>
+                    <p> C# developers create apps and programs for Windows operating systems by utilizing the .NET
+                        framework. They generally write code, create and design user interfaces, and debug and maintain
+                        client programs.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/subjects-7.png" alt="">
+                    <h3>python developer</h3>
+                </div>
+                <div class="content">
+                    <h3>python developer</h3>
+                    <p>Python allows you not only to develop websites and do data analytics, but also to build
+                        algorithms, test programs, and even create artificial intelligence. It's all just a matter of
+                        your ambition.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide">
+                <div class="image">
+                    <img src="image/subjects-3.jpg" alt="">
+                    <h3>SMM-specialist</h3>
+                </div>
+                <div class="content">
+                    <h3>SMM-specialist</h3>
+                    <p>choose</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide">
+                <div class="image">
+                    <img src="image/subjects-4.jpg" alt="">
+                    <h3>business analyst in IT</h3>
+                </div>
+                <div class="content">
+                    <h3>business analyst in IT</h3>
+                    <p>choose</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box hide">
+                <div class="image">
+                    <img src="image/subjects-9.png" alt="">
+                    <h3>frontend development</h3>
+                </div>
+                <div class="content">
+                    <h3>choose what's best for you!</h3>
+                    <p>choose</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-book"></i>12 modules</span>
+                        <span><i class="fas fa-clock"></i>6 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load-more">
+            <div class="btn">load more</div>
+        </div>
+        <div class="price">
+            <h1 class="heading">Interested in prices?</h1>
+            <div class="scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><b>Courses</b></td>
+                            <td>Full-stack Development</td>
+                            <td>Java Development</td>
+                            <td>SMM-Specialist</td>
+                            <td>Business Analyst in IT</td>
+                            <td>C# Development</td>
+                            <td>Frontend Development</td>
+                            <td>Python Developer</td>
+                            <td>frontend development</td>
+                            <td>frontend development</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Hours</b></td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                            <td>6 hours</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Modules</b></td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                            <td>12 modules</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><b>Cena</b></td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                            <td>330eur</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- courses selection end-->
+    <!-- teachers start -->
+    <section id="contact" class="heading-link">
+        <h3>teachers</h3>
+        <p><a href="#index.html">home</a> / teachers</p>
+    </section>
+    <section class="teachers">
+        <h1 class="heading">expert teachers</h1>
+        <div class="swiper teachers-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/teacher-1.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-telegram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>John Deo</h3>
+                        <span>expert tutor</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/teacher-2.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-telegram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Rajan Goui</h3>
+                        <span>expert tutor</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/teacher-3.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-telegram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Elizabeth Soli</h3>
+                        <span>expert tutor</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/teacher-4.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-telegram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Martina Blossom</h3>
+                        <span>expert tutor</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/teacher-5.png" alt="">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-telegram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Kleo Eveling</h3>
+                        <span>expert tutor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- teachers end -->
+    <!-- contact selection start-->
+    <section class="heading-link">
+        <h3>contact us</h3>
+        <p><a href="#index.html">home</a> / contact</p>
+    </section>
+    <section class="contact">
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>07:00am to 06:00pm</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone:</h3>
+                <p>+386-255-7826</p>
+                <p>+421-069-2522</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>email : </h3>
+                <p>studygo@gmail.com</p>
+                <p>studygo@gmail.com</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>address :</h3>
+                <p>kosice, slovakia - 400104</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="image/contact1.png" alt="">
+            </div>
+            <form id="messageForm" action="">
+                <h3>send us a message</h3>
+                <input type="text" id="name" placeholder="name" class="box" required>
+                <input type="email" id="email" placeholder="email" class="box" required>
+                <input type="number" id="number" placeholder="phone" class="box">
+                <textarea name="" class="box" id="message" placeholder="message" id="messageTextarea" cols="30"
+                    rows="10" required></textarea>
+                <input type="submit" id="submit" value="send message" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- contact selection end-->
+    <!-- faq selection stars -->
+    <section class="faq">
+        <h1 class="heading">frequently asked questions</h1>
+        <div class="accordion-container">
+            <div class="accordion active">
+                <div class="accordion-heading">
+                    <h3>how to contact for help?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Questions and answers are subject to change
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>can i choose my oun tutor?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Questions and answers are subject to change
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>how much fees for web development?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Questions and answers are subject to change
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>what payment metods are availabe?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Questions and answers are subject to change
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>can I have free trial for a month?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Questions and answers are subject to change
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>What is the best course in 2023?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Questions and answers are subject to change
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- faq selection ends -->
+
+
+
+
+
+
+    <!-- footer form selection stars-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-lightbulb"></i>Study Go</h3>
+                <p>Find us on social media</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-telegram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="index.html" class="link">Home</a>
+                <a href="contact.html" class="link">Contact</a>
+                <a href="courses.html" class="link">Course</a>
+                <a href="index.html" class="link">Description</a>
+                <a href="opin.html" class="link">Opinion</a>
+            </div>
+
+            <div class="box">
+                <h3>Userful link</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask question</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of user</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <form action="">
+                    <input type="name" placeholder="Enter your name" class="email">
+                    <input type="email" placeholder="Enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+
+                </form>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>ms. Kseniia Karpenko</span> | all reghts reserved!</div>
+
+    </section>
+    <!-- footer form selection end-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
